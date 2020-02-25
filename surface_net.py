@@ -9,4 +9,6 @@ URL = "http://hcmaslov.d-real.sci-nnov.ru/public/texts/%d0%97%d0%b0%d0%b4%d0%b0%
 root = requests.get(URL)
 soup = BeautifulSoup(root.content,'lxml')
 
-for img in soup.find_all('img',{'src':True})
+for img in soup.find_all('img',{'src':True}):
+    if img['src'] == '/icons/blank.gif':
+        
