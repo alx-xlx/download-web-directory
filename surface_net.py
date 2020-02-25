@@ -24,3 +24,8 @@ for img in soup.find_all('img',{'src':True}):
 for eachfile in range(len(files)):
     download_link = URL + files[eachfile]              # Download LInk
     filename = urllib.parse.unquote(files[eachfile])   # Filename
+
+    rawfile = requests.get(download_link)
+    with open(filename, 'wb') as f:
+        f.write(rawfile.content)
+    print(' ' + filename + ' Done !!')
