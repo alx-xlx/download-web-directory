@@ -16,5 +16,11 @@ for img in soup.find_all('img',{'src':True}):
     if (img['src'] == '/icons/blank.gif' or img['src'] == '/icons/back.gif' or img['src'] == '/icons/folder.gif'):
         continue
     files.append(img.find_next('a')['href'])
+
     print(files)
 
+# Download those files
+
+for eachfile in range(len(files)):
+    download_link = URL + files[eachfile]              # Download LInk
+    filename = urllib.parse.unquote(files[eachfile])   # Filename
