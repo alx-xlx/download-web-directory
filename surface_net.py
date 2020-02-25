@@ -28,4 +28,4 @@ for eachfile in range(len(files)):
     rawfile = requests.get(download_link)
     with open(filename, 'wb') as f:
         f.write(rawfile.content)
-    print(' ' + filename + ' Done !!')
+    print(' ' + filename + ' Done !!' + str(eachfile+1) + '/' +  len(files))
