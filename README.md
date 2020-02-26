@@ -46,7 +46,8 @@ python surface_net.py
 ```
 
 ## Linux
+### One line installation
 
 ```
-bash linux.sh
+bash linux.sh 
 ```
