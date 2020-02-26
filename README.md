@@ -27,12 +27,16 @@ get new identity in tor.exe when running for too long
 
 ### One line installation
 ```
+git clone https://github.com/alx-xlx/download-web-directory.git
+cd download-web-directory
 windows.bat
 ```
 
 ### OR
 
 ```
+git clone https://github.com/alx-xlx/download-web-directory.git
+cd download-web-directory
 pip install requests
 pip install -U requests[socks]
 pip install bs4
@@ -46,8 +50,27 @@ python surface_net.py
 ```
 
 ## Linux
-### One line installation
+### Install Torsocks
+
 
 ```
-bash linux.sh 
+git clone https://git.torproject.org/torsocks.git
+cd torsocks
+./autogen.sh
+./configure
+make
+sudo make install
+
+```
+
+OR
+
+```
+git clone https://github.com/alx-xlx/download-web-directory.git
+
+pip3 install requests
+pip3 install -U requests[socks]
+pip3 install bs4
+pip3 install lxml
+
 ```
