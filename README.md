@@ -5,6 +5,10 @@ Todo
 
 Support for surface web
 Support for onion links
+Directory to download to
+how long will the downloader go
+progress bar for each file
+develop a tree map
 
 ## Setup
 ### One line
