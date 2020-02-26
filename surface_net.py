@@ -15,6 +15,8 @@ files = []
 for img in soup.find_all('img',{'src':True}):
     if (img['src'] == '/icons/blank.gif' or img['src'] == '/icons/back.gif' or img['src'] == '/icons/folder.gif'):
         continue
+    if img['src'] == '/icons/folder.gif':
+        subddir = img.find_next('a')['href']
     files.append(img.find_next('a')['href'])
 
     print(files)
@@ -28,5 +30,6 @@ for eachfile in range(len(files)):
     rawfile = requests.get(download_link)
     with open(filename, 'wb') as f:
         f.write(rawfile.content)
-        
+
     print(' ' + filename + ' Done !! ' + str(eachfile+1) + '/' +  len(files))
+
