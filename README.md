@@ -63,7 +63,7 @@ sudo make install
 cd ..
 ```
 
-OR
+Now install `download-web-directory`
 
 ```
 git clone https://github.com/alx-xlx/download-web-directory.git
