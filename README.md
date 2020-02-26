@@ -9,6 +9,8 @@ Directory to download to
 how long will the downloader go
 progress bar for each file
 develop a tree map
+scan and skip already downloaded files and folders
+
 
 ## Setup
 ### One line
