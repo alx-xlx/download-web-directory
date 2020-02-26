@@ -7,7 +7,8 @@ import urllib
 URL = "http://awaken4u2655myzx.onion/F3thinker%2001/"
 
 proxies = {
-    
+    'http': 'socks5h://127.0.0.1:9050',
+    'https': 'socks5h://127.0.0.1:9050'
 }
 
 root = requests.get(URL)
