@@ -60,7 +60,6 @@ cd torsocks
 ./configure
 make
 sudo make install
-
 ```
 
 OR
