@@ -11,7 +11,7 @@ proxies = {
     'https': 'socks5h://127.0.0.1:9050'        # Port 9051 OR 9052 if using Tor Browser
 }
 
-root = requests.get(URL)
+root = requests.get(URL, proxies=proxies)
 soup = BeautifulSoup(root.content,'lxml')
 
 files = []
