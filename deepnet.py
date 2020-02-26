@@ -6,6 +6,10 @@ import urllib
 
 URL = "http://awaken4u2655myzx.onion/F3thinker%2001/"
 
+proxies = {
+    
+}
+
 root = requests.get(URL)
 soup = BeautifulSoup(root.content,'lxml')
 
