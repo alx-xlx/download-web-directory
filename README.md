@@ -21,17 +21,32 @@ scan and skip already downloaded files and folders
 get new identity in tor.exe when running for too long
 
 
-## Setup
-### One line
+
+
+## Windows
+
+### One line installation
 ```
 windows.bat
 ```
 
-OR
+### OR
 
 ```
 pip install requests
 pip install -U requests[socks]
 pip install bs4
 pip install lxml
+```
+
+### Run
+
+```
+python surface_net.py
+```
+
+## Linux
+
+```
+bash linux.sh
 ```
