@@ -60,13 +60,14 @@ cd torsocks
 ./configure
 make
 sudo make install
+cd ..
 ```
 
 OR
 
 ```
 git clone https://github.com/alx-xlx/download-web-directory.git
-
+cd download-web-directory
 pip3 install requests
 pip3 install -U requests[socks]
 pip3 install bs4
