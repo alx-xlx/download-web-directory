@@ -74,3 +74,9 @@ pip3 install bs4
 pip3 install lxml
 
 ```
+
+### Run
+
+```
+torsocks python3 deepnet.py
+```
