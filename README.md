@@ -4,9 +4,9 @@
 ## Todo
 ✔️️👳‍♀️❌
 
-Support for surface web
+Support for surface web ✔️
 
-Support for onion links
+Support for onion links ✔️
 
 Directory to download to
 
