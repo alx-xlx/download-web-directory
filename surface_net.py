@@ -16,7 +16,8 @@ for img in soup.find_all('img',{'src':True}):
     if (img['src'] == '/icons/blank.gif' or img['src'] == '/icons/back.gif' or img['src'] == '/icons/folder.gif'):
         continue
     if img['src'] == '/icons/folder.gif':
-        subddir = img.find_next('a')['href']
+        subddir_name = img.find_next('a')['href']
+        subddir_url = URL + subddir_name
         dir.append(subddir)
     files.append(img.find_next('a')['href'])
 
