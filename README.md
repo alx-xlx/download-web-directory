@@ -7,6 +7,10 @@ Support for surface web
 Support for onion links
 
 ## Setup
+### One line
+```
+windows.bat
+```
 
 ```
 pip install requests
