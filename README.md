@@ -51,7 +51,7 @@ python surface_net.py
 
 ## Linux
 ### Install Torsocks
-
+[torsocs](https://gitweb.torproject.org/torsocks.git/tree/README.md)
 
 ```
 git clone https://git.torproject.org/torsocks.git
