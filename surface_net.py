@@ -51,12 +51,17 @@ for eachfile in range(len(files)):
 # get sub dir
 
 
-# rawSubFolder = requests..get()
+# 
 
 
 # def main():
 
 # Get Subdirectory
 
+def subDir(dir):
+
+    for url in dir:
+        rawSubFolder = requests.get(url)
+        soup_sub = BeautifulSoup(rawSubFolder.content, 'lxml')
 
 
