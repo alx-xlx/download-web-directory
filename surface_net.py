@@ -38,7 +38,6 @@ def download(URL):
     for img in soup.find_all('img',{'src':True}):
         if (img['src'] == '/icons/blank.gif' or img['src'] == '/icons/back.gif' or img['src'] == '/icons/folder.gif'):
             continue
-
         files.append(img.find_next('a')['href'])
 
         print(files)
