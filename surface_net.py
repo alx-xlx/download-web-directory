@@ -48,3 +48,9 @@ for eachfile in range(len(files)):
 
 
 
+# get sub dir
+
+
+# rawSubFolder = requests..get()
+
+
