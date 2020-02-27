@@ -39,5 +39,5 @@ import urllib
 #     print(' ' + filename + ' Done !! ' + str(eachfile+1) + '/' +  len(files))
 
 
-file_entries = os.listdir(root)
+file_entries = os.listdir(all)
 print(file_entries)
