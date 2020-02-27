@@ -23,12 +23,12 @@ def subDir(URL):
     soup = BeautifulSoup(rawSubFolder.content, 'lxml')
     for img in soup.find_all('img',{'src':True}):
         if img['src'] == '/icons/folder.gif':
-            subfoldername = img.find_next('a')['href']
-            subfolder = 'Downloaded' + '/' + subfoldername, URL + subfoldername
-            dir.append(subfolder)
+            subddir_name = img.find_next('a')['href']
+            subddir_url = URL + subddir_name
+            dir.append(subddir)
 
 def download(URL):
-    
+
     root = requests.get(URL)
     soup = BeautifulSoup(root.content,'lxml')
 
@@ -38,10 +38,7 @@ def download(URL):
     for img in soup.find_all('img',{'src':True}):
         if (img['src'] == '/icons/blank.gif' or img['src'] == '/icons/back.gif' or img['src'] == '/icons/folder.gif'):
             continue
-        if img['src'] == '/icons/folder.gif':
-            subddir_name = img.find_next('a')['href']
-            subddir_url = URL + subddir_name
-            dir.append(subddir)
+
         files.append(img.find_next('a')['href'])
 
         print(files)
