@@ -38,3 +38,6 @@ for eachfile in range(len(files)):
 
     print(' ' + filename + ' Done !! ' + str(eachfile+1) + '/' +  len(files))
 
+
+file_entries = os.listdir(root)
+print(file_entries)
