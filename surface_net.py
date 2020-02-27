@@ -24,7 +24,7 @@ for img in soup.find_all('img',{'src':True}):
     print(files)
 
 
-file_entries = os.listdir('./')
+file_entries = os.listdir('Downloaded')
 
 
 # Download those files
@@ -62,7 +62,10 @@ def subDir(URL):
 
 
     rawSubFolder = requests.get(url)
-    soup_sub = BeautifulSoup(rawSubFolder.content, 'lxml')
+    soup = BeautifulSoup(rawSubFolder.content, 'lxml')
 
-
+    for img in soup.find_all('img',{'src':True}):
+        if img['src'] == '/icons/folder.gif':
+            subfoldername = img.find_next('a')['href']
+            subfolder = 
 
