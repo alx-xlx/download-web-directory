@@ -57,15 +57,14 @@ for eachfile in range(len(files)):
 # def main():
 
 # Get Subdirectory
-
 def subDir(URL):
-
-
     rawSubFolder = requests.get(url)
     soup = BeautifulSoup(rawSubFolder.content, 'lxml')
-
     for img in soup.find_all('img',{'src':True}):
         if img['src'] == '/icons/folder.gif':
             subfoldername = img.find_next('a')['href']
-            subfolder = 
+            subfolder = 'Downloaded' + '/' + subfoldername, URL + subfoldername
+            dir.append(subfolder)
+
+
 
