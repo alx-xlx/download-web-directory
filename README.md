@@ -1,8 +1,46 @@
 # UNDER CONSTRUCTION
 
+BLUE PRINT
+
+First scan the http folder for files, download em
+Scan again for folders
+then infinitely loop both the above functions for
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # download-web-directory
  Download Web Directory 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Todo
