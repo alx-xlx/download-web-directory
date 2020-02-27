@@ -23,6 +23,10 @@ for img in soup.find_all('img',{'src':True}):
 
     print(files)
 
+
+file_entries = os.listdir('./')
+
+
 # Download those files
 
 for eachfile in range(len(files)):
@@ -39,5 +43,5 @@ for eachfile in range(len(files)):
     print(' ' + filename + ' Done !! ' + str(eachfile+1) + '/' +  len(files))
 
 
-file_entries = os.listdir('./')
-print(file_entries)
+
+
