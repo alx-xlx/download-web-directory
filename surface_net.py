@@ -34,8 +34,11 @@ for eachfile in range(len(files)):
     filename = urllib.parse.unquote(files[eachfile])   # Filename
 
 
-
-
+    # Check if files are already downloaded
+    if filename in file_entries:
+        print('>>>  Skipping >>>>  ',filename)
+        continue
+    
     rawfile = requests.get(download_link)
     with open(filename, 'wb') as f:
         f.write(rawfile.content)
