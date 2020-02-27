@@ -18,7 +18,7 @@ URL = "http://hcmaslov.d-real.sci-nnov.ru/public/texts/%d0%97%d0%b0%d0%b4%d0%b0%
 
 
 # Get Subdirectory
-def subDir(URL):
+def subDir(URL,dir):
     rawSubFolder = requests.get(url)
     soup = BeautifulSoup(rawSubFolder.content, 'lxml')
     for img in soup.find_all('img',{'src':True}):
@@ -64,3 +64,13 @@ def download(URL):
 
         print(' ' + filename + ' Done !! ' + str(eachfile+1) + '/' +  len(files))
 
+
+
+
+
+def main():
+    
+    dir = []
+
+    subDir(URL, dir)
+    download(URL)
