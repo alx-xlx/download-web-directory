@@ -84,4 +84,6 @@ def main():
         downloadFolder = urllib.parse.unquote(subDir[0])
         print('Download Folder - ', downloadFolder)
 
-        
+        subDir(URL, dir)
+        download(url)
+
