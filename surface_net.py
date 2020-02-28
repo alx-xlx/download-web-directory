@@ -74,3 +74,10 @@ def main():
 
     subDir(URL, dir)
     download(URL)
+
+
+    while dir:
+        subDir = dir.pop(0)
+        print('Subfolder - ', subDir)
+        url = subDir[1]
+        print('URL - ', url)
