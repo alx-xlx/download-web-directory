@@ -9,6 +9,16 @@ then infinitely loop both the above functions for
 
 
 
+TODO
+
+Download the files
+Check for files in local before downloading
+get a progress bar for downloading
+
+
+
+
+
 
 
 
